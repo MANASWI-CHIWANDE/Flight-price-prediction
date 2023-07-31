@@ -14,7 +14,8 @@ Flight Price Prediction is an Android app that allows users to predict the price
 
 ## Screenshots
 
-_Insert some screenshots of your app here to give users an idea of its interface and features._
+![WhatsApp Image 2023-07-31 at 2 02 18 PM](https://github.com/MANASWI-CHIWANDE/Flight-price-prediction/assets/86121472/cb95aaea-3a6d-40c5-a26c-122afe1aff0c)
+
 
 
 2. Open the project in Android Studio.
