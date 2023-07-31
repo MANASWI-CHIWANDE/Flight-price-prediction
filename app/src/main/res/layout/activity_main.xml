@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E2954"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flight Price Prediction"
+        android:background="#1F6E8C"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/departure_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:text="Departure Time:"
+        android:textColor="#C5DFF8"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_textview" />
+
+    <TextView
+        android:id="@+id/departure_date"
+        android:layout_width="98dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Select day"
+        android:textSize="20sp"
+        android:textColor="#C5DFF8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toEndOf="@id/departure_label"
+        app:layout_constraintTop_toTopOf="@id/departure_label" />
+
+    <TextView
+        android:id="@+id/departure_time"
+        android:layout_width="105dp"
+        android:layout_height="29dp"
+        android:hint="Select time"
+        android:textSize="20sp"
+        android:textColor="#C5DFF8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/departure_date"
+        app:layout_constraintTop_toTopOf="@+id/departure_date" />
+
+    <TextView
+        android:id="@+id/arrival_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:text="Arrival Time:"
+        android:textSize="16sp"
+        android:textColor="#C5DFF8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/departure_label" />
+
+    <TextView
+        android:id="@+id/arrival_date"
+        android:layout_width="101dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Select day"
+        android:textSize="20sp"
+        android:textColor="#C5DFF8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toEndOf="@id/arrival_label"
+        app:layout_constraintTop_toTopOf="@id/arrival_label" />
+
+    <TextView
+        android:id="@+id/arrival_time"
+        android:layout_width="105dp"
+        android:layout_height="29dp"
+        android:hint="Select time"
+        android:textSize="20sp"
+        android:textColor="#C5DFF8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/arrival_date"
+        app:layout_constraintTop_toTopOf="@+id/arrival_date" />
+
+    <TextView
+        android:id="@+id/stops_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Total Stops:"
+        android:textSize="16sp"
+        android:textColor="#C5DFF8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/arrival_label" />
+
+    <EditText
+        android:id="@+id/stops_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Enter #stops"
+        android:inputType="number"
+        android:textColor="#C5DFF8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/stops_label"
+        app:layout_constraintTop_toTopOf="@id/stops_label" />
+
+    <TextView
+        android:id="@+id/airline_label"
+        android:layout_width="65dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="Airline : "
+        android:textSize="16sp"
+        android:textColor="#C5DFF8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stops_label" />
+
+    <Spinner
+        android:id="@+id/airline_spinner"
+        android:layout_width="261dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:popupBackground="#1597BB"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toEndOf="@id/airline_label"
+        app:layout_constraintTop_toTopOf="@id/airline_label" />
+
+    <TextView
+        android:id="@+id/source_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="Source:"
+        android:textSize="16sp"
+        android:textColor="#C5DFF8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/airline_spinner" />
+
+    <Spinner
+        android:id="@+id/source_spinner"
+        android:layout_width="261dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:popupBackground="#1597BB"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/source_label"
+        app:layout_constraintTop_toTopOf="@id/source_label" />
+
+    <TextView
+        android:id="@+id/destination_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#C5DFF8"
+        android:text="Destination:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/source_spinner" />
+
+    <Spinner
+        android:id="@+id/destination_spinner"
+        android:layout_width="261dp"
+        android:layout_height="46dp"
+        android:popupBackground="#1597BB"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintTop_toTopOf="@id/destination_label"
+        app:layout_constraintStart_toEndOf="@id/destination_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+
+    <Button
+        android:id="@+id/predict_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:text="Predict"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/destination_spinner" />
+
+    <TextView
+        android:id="@+id/prediction_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="#84A7A1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/predict_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

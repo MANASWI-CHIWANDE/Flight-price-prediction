@@ -1,8 +1,0 @@
-scikit-learn
-matplotlib
-seaborn
-numpy
-pandas
-flask
-openpyxl
-pickle
