@@ -1,5 +1,4 @@
 # Flight-price-prediction
-# Flight Price Prediction Android App
 
 ## Introduction
 
