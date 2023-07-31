@@ -18,12 +18,6 @@ Flight Price Prediction is an Android app that allows users to predict the price
 
 
 
-2. Open the project in Android Studio.
-
-3. Connect your Android device to your computer or use an emulator.
-
-4. Build and run the app on your device.
-
 ## Usage
 
 1. Launch the Flight Price Prediction app on your Android device.
